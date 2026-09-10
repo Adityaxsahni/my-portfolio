@@ -1,0 +1,30 @@
+.noise{display:block;position:absolute;top:0;left:0;right:0;height:100vh;pointer-events:none;opacity:.38;background-image:radial-gradient(#050505 1.2px,transparent 1.2px);background-size:40px 40px;mask-image:linear-gradient(to bottom,black 0 78%,transparent 100%)}
+.hero{grid-template-columns:1.1fr 1fr}
+.hero h1{font-size:clamp(68px,8.7vw,132px);line-height:.82;white-space:nowrap;font-weight:700}
+.hero h1 em{color:var(--paper);background:var(--ink)}
+.hero-dot{color:var(--ink);display:inline-block;margin-left:.015em}
+.hero-description{font-size:clamp(19px,1.7vw,26px)}
+.brand,.nav-links a,.nav-status,.button{font-weight:700}
+.section-heading h2,.experience-top h3,.project-card h3,.contact-content h2{font-weight:700}
+.about-quote{font-weight:700}
+.section-copy,.about-text,.experience-body,.experience-main ul,.project-description,.contact-content>p:not(.eyebrow){font-weight:500}
+.hero-actions{flex-wrap:wrap;row-gap:16px}
+.terminal-badge{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--ink);padding:11px 13px;background:var(--paper);font-family:var(--mono);font-size:11px;font-weight:700;text-transform:uppercase;transition:transform .2s,background .2s,box-shadow .2s}
+.terminal-badge:hover{background:var(--accent);transform:translateY(-4px);box-shadow:6px 6px 0 var(--ink)}
+.terminal-badge svg:first-child{animation:terminalBlink 1.8s ease-in-out infinite}
+.portrait-frame img{object-fit:cover;padding:0;background:transparent;transform:none}
+.portrait-frame:hover img{transform:scale(1.02)}
+.skills-grid{grid-template-columns:1fr 1fr;border-top:4px solid var(--ink)}
+.skill-group{min-height:225px;padding:46px 42px 42px 0;border-bottom:0}
+.skill-group:nth-child(even){border-left:4px solid var(--ink);padding-left:42px}
+.skill-label{font-family:var(--mono);font-size:14px;letter-spacing:.03em;margin-bottom:30px;font-weight:700}
+.skill-items{gap:12px}
+.skill-items span{background:var(--paper);border:3px solid var(--ink);padding:12px 18px;font-family:var(--mono);font-size:13px;line-height:1;box-shadow:none}
+.skill-items span:hover{background:var(--accent);transform:translateY(-3px);box-shadow:4px 4px 0 var(--ink)}
+.button,.project-card,.about-text,.portrait-frame,.nav-status{transition:transform .18s,box-shadow .18s,background .18s}
+.button:hover{transform:translate(-6px,-6px);box-shadow:10px 10px 0 var(--ink)}
+.project-card:hover{transform:translate(-7px,-7px);box-shadow:16px 16px 0 var(--ink)}
+.about-text:hover{transform:translate(-4px,-4px);box-shadow:14px 14px 0 var(--ink)}
+.portrait-frame:hover{transform:translate(-4px,-4px);box-shadow:18px 18px 0 var(--ink)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.hero h1{font-size:clamp(62px,17vw,110px)}.hero-description{font-size:20px}.skills-grid{grid-template-columns:1fr}.skill-group{min-height:180px;padding:30px 0}.skill-group:nth-child(even){border-left:0;padding-left:0;border-top:4px solid var(--ink)}}
+@keyframes terminalBlink{0%,100%{opacity:1;transform:translateX(0)}50%{opacity:.55;transform:translateX(2px)}}
