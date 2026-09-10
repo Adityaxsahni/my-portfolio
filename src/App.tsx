@@ -84,7 +84,7 @@ export function App() {
         <div className="hero-actions"><a className="button button-primary" href="#work">View selected work <ArrowDown size={16} /></a><a className="terminal-badge" href="#contact"><Terminal size={18} /> terminal <ArrowUpRight size={14} /></a><a className="text-link" href="#contact">Let’s connect <ArrowUpRight size={16} /></a></div>
       </div>
       <div className="hero-aside reveal is-visible">
-        <div className="portrait-frame"><img src="/profile.png" alt="Professional portrait of Aditya Kumar" /><span className="portrait-label">PORTRAIT / 2026</span></div>
+        <div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}profile.png`} alt="Professional portrait of Aditya Kumar" /><span className="portrait-label">PORTRAIT / 2026</span></div>
         <div className="hero-meta"><span>01</span><p>Building from<br /><strong>first principles</strong></p><span className="arrow-mark">↘</span></div>
       </div>
       <div className="hero-bottom"><span>BASED IN INDIA</span><span>SCROLL TO EXPLORE <ArrowDown size={14} /></span><span>AVAILABLE / 2026</span></div>

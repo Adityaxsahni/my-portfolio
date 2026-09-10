@@ -52,6 +52,12 @@ Preview the production build:
 npm run preview
 ```
 
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds and deploys the portfolio whenever changes are pushed to `main`. It can also be started manually from the GitHub Actions tab.
+
+In the repository settings, set **Pages** > **Build and deployment** > **Source** to **GitHub Actions**. The workflow configures the Vite base path from the repository name, so this project is served correctly at `https://adityaxsahni.github.io/my-portfolio/`.
+
 ## Project Structure
 
 ```text
